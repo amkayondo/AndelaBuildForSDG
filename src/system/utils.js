@@ -28,14 +28,14 @@ export const getCurrentlyInfected = (reportedCases, caseType) => {
   return reportedCases * 50;
 };
 
-export const getsevereCasesByRequestedTime = (value) => 0.15 * value;
+export const getsevereCasesByRequestedTime = (value) => Math.round(0.15 * value);
 
 export const gethospitalBedsByRequestedTime = (totalHospitalBeds, severeCasesByRequestedTime) => {
   const result = 0.35 * totalHospitalBeds - severeCasesByRequestedTime;
   return Math.round(result);
 };
 
-export const getCasesForICUByRequestedTime = (value) => (5 / 100) * value;
+export const getCasesForICUByRequestedTime = (value) => Math.round(0.05 * value);
 export const getCasesForVentilatorsByRequestedTime = (value) => Math.round((2 / 100) * value);
 export const getDollarsInFlight = (
   infectionsByRequestedTime,
