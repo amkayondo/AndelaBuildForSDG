@@ -1,3 +1,4 @@
+![Gradr](https://github.com/amkayondo/AndelaBuildForSDG/workflows/Gradr/badge.svg)
 # #BuildForSDG Cohort-1 JavaScript Assessment
 
 > Build an overly simplified COVID-19 infection impact estimator

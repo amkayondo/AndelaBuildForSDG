@@ -43,6 +43,6 @@ export const getDollarsInFlight = (
   avgDailyIncome,
   days
 ) => {
-  const result = (infectionsByRequestedTime * avgDailyIncome * avgPopulationIncome) / days;
+  const result = infectionsByRequestedTime * avgDailyIncome * avgPopulationIncome * days;
   return parseFloat(result.toFixed(1), 10);
 };
