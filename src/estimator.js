@@ -6,10 +6,8 @@ const covid19ImpactEstimator = (userData) => {
   const { generateImpactData, generateServeData } = Estimator;
   return {
     data,
-    estimate: {
-      impact: generateImpactData(),
-      severeImpact: generateServeData()
-    }
+    impact: generateImpactData(),
+    severeImpact: generateServeData()
   };
 };
 
