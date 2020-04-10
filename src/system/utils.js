@@ -37,7 +37,7 @@ export const gethospitalBedsByRequestedTime = (totalHospitalBeds, severeCasesByR
 };
 
 export const getCasesForICUByRequestedTime = (value) => (5 / 100) * value;
-export const getCasesForVentilatorsByRequestedTime = (value) => Math.floor((2 / 100) * value);
+export const getCasesForVentilatorsByRequestedTime = (value) => Math.round((2 / 100) * value);
 export const getDollarsInFlight = (
   infectionsByRequestedTime,
   avgPopulationIncome,
