@@ -32,13 +32,11 @@ export const getsevereCasesByRequestedTime = (value) => 0.15 * value;
 
 export const gethospitalBedsByRequestedTime = (totalHospitalBeds, severeCasesByRequestedTime) => {
   const result = 0.35 * totalHospitalBeds - severeCasesByRequestedTime;
-  const data = Math.floor(result) + 1;
-  // result.toString().split(".");
-  return parseInt(data, 10);
+  return Math.round(result);
 };
 
 export const getCasesForICUByRequestedTime = (value) => (5 / 100) * value;
-export const getCasesForVentilatorsByRequestedTime = (value) => Math.floor((2 / 100) * value);
+export const getCasesForVentilatorsByRequestedTime = (value) => Math.round((2 / 100) * value);
 export const getDollarsInFlight = (
   infectionsByRequestedTime,
   avgPopulationIncome,
