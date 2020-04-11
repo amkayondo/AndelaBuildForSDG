@@ -11,6 +11,7 @@ const NumberOfDays = (timeToElapse, periodType) => {
       days = timeToElapse * 30;
       break;
     default:
+      
       days = 1;
   }
   return days;
@@ -43,6 +44,6 @@ export const getDollarsInFlight = (
   avgDailyIncome,
   days
 ) => {
-  const result = infectionsByRequestedTime * avgDailyIncome * avgPopulationIncome * days;
-  return parseFloat(result.toFixed(1), 10);
+  const result = (infectionsByRequestedTime * avgDailyIncome * avgPopulationIncome) / days;
+  return Math.trunc(result);
 };
