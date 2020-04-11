@@ -19,7 +19,7 @@ const NumberOfDays = (timeToElapse, periodType) => {
 
 export const getNumberOfDays = (timeToElapse, periodType) => {
   const days = NumberOfDays(timeToElapse, periodType);
-  return 2 ** Math.floor(days / 3);
+  return 2 ** Math.trunc(days / 3);
 };
 
 export const getCurrentlyInfected = (reportedCases, caseType) => {
@@ -29,15 +29,20 @@ export const getCurrentlyInfected = (reportedCases, caseType) => {
   return reportedCases * 50;
 };
 
-export const getsevereCasesByRequestedTime = (value) => 0.15 * value;
+export const getsevereCasesByRequestedTime = (value) => Math.trunc(0.15 * value);
 
 export const gethospitalBedsByRequestedTime = (totalHospitalBeds, severeCasesByRequestedTime) => {
   const result = 0.35 * totalHospitalBeds - severeCasesByRequestedTime;
-  return Math.round(result);
+  return Math.trunc(result);
 };
 
-export const getCasesForICUByRequestedTime = (value) => (5 / 100) * value;
-export const getCasesForVentilatorsByRequestedTime = (value) => Math.floor((2 / 100) * value);
+export const getCasesForICUByRequestedTime = (value) => Math.trunc((5 / 100) * value);
+
+export const getCasesForVentilatorsByRequestedTime = (value) => {
+  const result = Math.trunc((2 / 100) * value);
+  return result;
+};
+
 export const getDollarsInFlight = (
   infectionsByRequestedTime,
   avgPopulationIncome,
