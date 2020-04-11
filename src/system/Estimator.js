@@ -29,7 +29,7 @@ export default class Estimator {
       result.dollarsInFlight = Math.trunc((
         result.infectionsByRequestedTime
         * avgDailyIncomePopulation * avgDailyIncomeInUSD
-      ) * days);
+      ) / days);
       return result;
     };
 
@@ -51,7 +51,7 @@ export default class Estimator {
       result.dollarsInFlight = Math.trunc((
         result.infectionsByRequestedTime
         * avgDailyIncomePopulation * avgDailyIncomeInUSD
-      ) * days);
+      ) / days);
       return result;
     };
   }
