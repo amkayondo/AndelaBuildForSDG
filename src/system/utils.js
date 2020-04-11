@@ -11,7 +11,7 @@ const NumberOfDays = (timeToElapse, periodType) => {
       days = timeToElapse * 30;
       break;
     default:
-      
+
       days = 1;
   }
   return days;
