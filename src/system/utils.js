@@ -1,20 +1,11 @@
 const NumberOfDays = (timeToElapse, periodType) => {
-  let days;
-  switch (periodType) {
-    case "days":
-      days = timeToElapse;
-      break;
-    case "weeks":
-      days = timeToElapse * 7;
-      break;
-    case "months":
-      days = timeToElapse * 30;
-      break;
-    default:
-
-      days = 1;
+  let result = timeToElapse;
+  if (periodType === "days") {
+    result *= 7;
+  } if (periodType === "weeks") {
+    result *= 30;
   }
-  return days;
+  return result;
 };
 
 export const getNumberOfDays = (timeToElapse, periodType) => {
