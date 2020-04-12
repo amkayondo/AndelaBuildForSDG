@@ -4,7 +4,7 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 const BrotliPlugin = require("brotli-webpack-plugin");
 
-const PUBLIC_PATH = "http://localhost:8080";
+const PUBLIC_PATH = "https://covid-19-estimator01.herokuapp.com";
 
 module.exports = {
   entry: "./src/App.js",
