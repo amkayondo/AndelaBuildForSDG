@@ -1,4 +1,5 @@
 module.exports = {
+  "parser": "babel-eslint",
   env: {
     browser: true,
     es6: true,
@@ -20,6 +21,6 @@ module.exports = {
     "comma-dangle": ["error", "never"],
     "no-param-reassign": ["error", { "props": false }],
     "quotes": [1, "double", { "avoidEscape": true }],
-    "no-console": 0
+    "no-console": 0,
   },
 };
