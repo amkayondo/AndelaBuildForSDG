@@ -7,7 +7,7 @@ const BrotliPlugin = require("brotli-webpack-plugin");
 const PUBLIC_PATH = "https://covid-19-estimator01.herokuapp.com";
 
 module.exports = {
-  entry: "./src/App.js",
+  entry: "./App.js",
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "bundle.app.js"
@@ -17,22 +17,34 @@ module.exports = {
       {
         test: /\.js$|jsx/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        use: {
+          loader: "babel-loader"
+        }
       },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "images/[hash]-[name].[ext]"
+          }
+        }]
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader"
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
+          }
+        ]
       }
     ]
   },
