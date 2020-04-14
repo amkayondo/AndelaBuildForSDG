@@ -21,7 +21,9 @@ export default class UserInputForm extends Component {
         <div class="div-list">
           <div class="div-item">
             <div class="div-item_sl">
-              <img className="bgimgd" src={BgImg} />
+              <img className="bgimgd" alt="
+              Image showing covid-19 estimatation
+              " src={BgImg} />
             </div>
           </div>
         </div>

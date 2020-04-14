@@ -8,25 +8,25 @@ export default class InputData extends Component {
           <div class="div-form_inner">
             <div class="div-input">
               <label for="population" class="div-input__label">Population</label>
-              <input type="number" data-population="population"
+              <input type="number" id="population" data-population="population"
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="timeToElapse" class="div-input__label">Time to Elapse</label>
-              <input type="number" data-time-to-elapse="timeToElapse"
+              <input type="number" id="timeToElapse" data-time-to-elapse="timeToElapse"
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="reportedCases" class="div-input__label">Reported Cases</label>
-              <input type="number" data-reported-cases="reportedCases"
+              <input type="number" id="reportedCases" data-reported-cases="reportedCases"
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="totalHospitalBeds" class="div-input__label">Total Hospital Beds</label>
-              <input type="number" data-total-hospital-beds="totalHospitalBeds"
+              <input type="number" id="totalHospitalBeds" data-total-hospital-beds="totalHospitalBeds"
               autocomplete="off"
               class="div-input__input"/>
             </div>
@@ -36,6 +36,7 @@ export default class InputData extends Component {
               <label for="periodType" class="div-input__label">Period Type</label>
               <select data-ref="cardDate"
               data-period-type="periodType"
+              id="periodType"
               class="div-input__input -select">
                 <option value="Days">
                   Days
