@@ -1,0 +1,58 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable class-methods-use-this */
+import React, { Component } from "react";
+
+export default class InputData extends Component {
+  render() {
+    return (
+          <div class="div-form_inner">
+            <div class="div-input">
+              <label for="population" class="div-input__label">Population</label>
+              <input type="number" data-population="population"
+              autocomplete="off"
+              class="div-input__input"/>
+            </div>
+            <div class="div-input">
+              <label for="timeToElapse" class="div-input__label">Time to Elapse</label>
+              <input type="number" data-time-to-elapse="timeToElapse"
+              autocomplete="off"
+              class="div-input__input"/>
+            </div>
+            <div class="div-input">
+              <label for="reportedCases" class="div-input__label">Reported Cases</label>
+              <input type="number" data-reported-cases="reportedCases"
+              autocomplete="off"
+              class="div-input__input"/>
+            </div>
+            <div class="div-input">
+              <label for="totalHospitalBeds" class="div-input__label">Total Hospital Beds</label>
+              <input type="number" data-total-hospital-beds="totalHospitalBeds"
+              autocomplete="off"
+              class="div-input__input"/>
+            </div>
+            <div class="div-form__row">
+              <div class="div-form__col">
+              <div class="div-form__group">
+              <label for="periodType" class="div-input__label">Period Type</label>
+              <select data-ref="cardDate"
+              data-period-type="periodType"
+              class="div-input__input -select">
+                <option value="Days">
+                  Days
+                  </option><option value="Weeks">
+                  Weeks
+                  </option><option value="Months">
+                  Months
+                  </option>
+            </select>
+            </div></div>
+          </div>
+         <button
+         data-go-estimate="data-go-estimate"
+         class="div-form__button">
+          Estimate
+          </button>
+        </div>
+    );
+  }
+}
