@@ -9,26 +9,22 @@ export default class InputData extends Component {
             <div class="div-input">
               <label for="population" class="div-input__label">Population</label>
               <input type="number" id="population" data-population=""
-              autocomplete="off"
-              class="div-input__input"/>
+              class="div-input__input" required/>
             </div>
             <div class="div-input">
               <label for="timeToElapse" class="div-input__label">Time to Elapse</label>
               <input type="number" id="timeToElapse" data-time-to-elapse=""
-              autocomplete="off"
-              class="div-input__input"/>
+              class="div-input__input" required/>
             </div>
             <div class="div-input">
               <label for="reportedCases" class="div-input__label">Reported Cases</label>
               <input type="number" id="reportedCases" data-reported-cases=""
-              autocomplete="off"
-              class="div-input__input"/>
+              class="div-input__input" required/>
             </div>
             <div class="div-input">
               <label for="totalHospitalBeds" class="div-input__label">Total Hospital Beds</label>
               <input type="number" id="totalHospitalBeds" data-total-hospital-beds=""
-              autocomplete="off"
-              class="div-input__input"/>
+              class="div-input__input" required/>
             </div>
             <div class="div-form__row">
               <div class="div-form__col">
