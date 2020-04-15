@@ -8,25 +8,25 @@ export default class InputData extends Component {
           <div class="div-form_inner">
             <div class="div-input">
               <label for="population" class="div-input__label">Population</label>
-              <input type="number" id="population" data-population="population"
+              <input type="number" id="population" data-population
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="timeToElapse" class="div-input__label">Time to Elapse</label>
-              <input type="number" id="timeToElapse" data-time-to-elapse="timeToElapse"
+              <input type="number" id="timeToElapse" data-time-to-elapse
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="reportedCases" class="div-input__label">Reported Cases</label>
-              <input type="number" id="reportedCases" data-reported-cases="reportedCases"
+              <input type="number" id="reportedCases" data-reported-cases
               autocomplete="off"
               class="div-input__input"/>
             </div>
             <div class="div-input">
               <label for="totalHospitalBeds" class="div-input__label">Total Hospital Beds</label>
-              <input type="number" id="totalHospitalBeds" data-total-hospital-beds="totalHospitalBeds"
+              <input type="number" id="totalHospitalBeds" data-total-hospital-beds
               autocomplete="off"
               class="div-input__input"/>
             </div>
@@ -35,7 +35,7 @@ export default class InputData extends Component {
               <div class="div-form__group">
               <label for="periodType" class="div-input__label">Period Type</label>
               <select data-ref="cardDate"
-              data-period-type="periodType"
+              data-period-type
               id="periodType"
               class="div-input__input -select">
                 <option value="Days">
@@ -49,7 +49,7 @@ export default class InputData extends Component {
             </div></div>
           </div>
          <button
-         data-go-estimate="data-go-estimate"
+         data-go-estimate
          class="div-form__button">
           Estimate
           </button>
