@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.mainfds {
+    min-height: 100vh;
+    display: flex;
+    padding: 50px 15px;
+}
+
+.bgimgd {
+    width: 100%;
+    height: 100%;
+}
+.div-form {
+    max-width: 575px;
+    margin: auto;
+    width: 100%;
+}
+.div-list {
+    margin-bottom: -130px;
+}
+.div-item {
+    max-width: 614px;
+    height: 318px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.div-item_sl {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px 0 rgba(14, 42, 90, 0.55);
+    transform: perspective(2000px) rotateY(0deg) rotateX(0deg) rotate(0deg);
+    transform-style: preserve-3d;
+    transition: all 0.8s cubic-bezier(0.71, 0.03, 0.56, 0.85);
+    backface-visibility: hidden;
+    height: 100%;
+}
+.div-form_inner {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 10px;
+    padding: 44px;
+    padding-top: 180px;
+    padding-right: 75px;
+}
+.div-input {
+    margin-bottom: 20px;
+}
+.div-input__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1a3b5d;
+    width: 100%;
+    display: block;
+    user-select: none;
+}
+.div-input__input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    padding: 5px 15px;
+    background: none;
+    color: #1a3b5d;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.div-form__row {
+    display: flex;
+    align-items: flex-start;
+}
+.div-form__col {
+    flex: auto;
+    margin-right: 35px;
+}
+.div-form__group {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.div-form__col.-djsd {
+    max-width: 150px;
+    margin-left: -36px;
+}
+.div-form__col:last-child {
+    margin-right: 0;
+}
+.div-form__col {
+    flex: auto;
+    margin-right: 35px;
+}
+.div-input__input.-select {
+    -webkit-appearance: none;
+    background-size: 12px;
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+.div-input__input:hover, .div-input__input:focus {
+    border-color: #3d9cff;
+}
+.div-form__group .div-input__input {
+    flex: 1;
+    margin-right: -32px;
+    width: 296px;
+    height: 54px;
+}
+
+.div-form__col.-djfef {
+    margin-left: 7px;
+}
+.div-form__button {
+    width: 100%;
+    height: 55px;
+    background: #23d2ba;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
+    color: #0a0a0a;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 15px;
+}
+.tpdf {
+    /* background: aqua; */
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
