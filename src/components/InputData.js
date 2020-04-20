@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React, { Component } from "react";
 
 export default class InputData extends Component {
   render() {
     return (
-          <div class="div-form_inner">
+          <form action="#" class="div-form_inner">
             <div class="div-input">
               <label for="population" class="div-input__label">Population</label>
               <input type="number" id="population" data-population=""
@@ -49,7 +47,7 @@ export default class InputData extends Component {
          class="div-form__button">
           Estimate
           </button>
-        </div>
+        </form>
     );
   }
 }

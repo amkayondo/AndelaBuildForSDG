@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React, { Component, lazy, Suspense } from "react";
 import LoadingForm from "./LoadingForm";
 import "../assets/css/formStyle.css";

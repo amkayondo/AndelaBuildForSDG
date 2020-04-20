@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 export const normalizeDays = (periodType, period) => {
   if (periodType === "weeks") {
     period *= 7;
